@@ -1,19 +1,21 @@
+import {NavLink} from "react-router-dom";
+
 const Navbar = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <a className="navbar-brand" href="#">Custom websites</a>
+                    <NavLink className="navbar-brand" to='/'>Custom websites</NavLink>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">About us</a>
+                                <NavLink className="nav-link" to='/about-us' end>About us</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contacts</a>
+                                <NavLink className="nav-link" to='/contacts' end>Contacts</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Services</a>
+                                <NavLink className="nav-link" to='/portfolio'>Portfolio</NavLink>
                             </li>
                         </ul>
                     </div>
